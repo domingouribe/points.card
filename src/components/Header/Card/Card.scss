@@ -1,0 +1,60 @@
+:root {
+    --reaction: red;
+    --memory: yellow;
+    --verbal: green;
+}
+
+.Card {
+  width: 20em;
+  height: 90vh;
+  margin: auto;
+  background-color: white;
+  color: #222;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+
+  > header {
+    background-color: blue;
+    width:100%;
+    text-align: center;
+    border-radius: 0 0 1em 1em;
+    color: white;
+    display: inherit;
+    flex-flow: inherit;
+    margin: 0;
+    align-items: center;
+  }
+
+  &-number {
+    background-color: #222;
+    display: block;
+    cursor: pointer;
+    width: 4em;
+    height: 4em;
+    border-radius: 5rem;
+    line-height: 4;
+    position: relative;
+
+    span {
+        font-size: 0.8rem;
+        display: block;
+        position:absolute;
+        bottom: 1px;
+        left: 28px;
+    }
+    
+  }
+}
+
+
+.Button {
+    background-color: #222;
+    color: whitesmoke;
+    border-radius: 2rem;
+    border: none;
+    padding: 0.5rem 2rem;
+    width: 100%;
+    display: flex;
+    flex: 1;
+}
